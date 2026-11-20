@@ -1,0 +1,952 @@
+{
+  "version": "2.0",
+  "notes": "16个内容家族与可配置视频模板；分类并非医学分类或封闭全集；video_fit A=较易制作限时互动, B=需较长说明/交互, C=更适合科普；auto_video_supported 只标注现有代码实际可生成的3种",
+  "families": [
+    {
+      "id": "01",
+      "name": "视觉搜索与选择性注意",
+      "goal": "专注找目标",
+      "tasks": [
+        {
+          "id": "01-01",
+          "name": "规则舒尔特方格",
+          "rule": "在打乱的方格里依次找1到N",
+          "video_fit": "A",
+          "suggested_seconds": 90,
+          "auto_video_supported": false
+        },
+        {
+          "id": "01-02",
+          "name": "不规则拼块舒尔特",
+          "rule": "在蜂窝或Voronoi多边形中找1到N",
+          "video_fit": "A",
+          "suggested_seconds": 90,
+          "auto_video_supported": false
+        },
+        {
+          "id": "01-03",
+          "name": "旋转圆盘舒尔特",
+          "rule": "圆盘慢速旋转时顺序找1到N",
+          "video_fit": "A",
+          "suggested_seconds": 90,
+          "auto_video_supported": true
+        },
+        {
+          "id": "01-04",
+          "name": "动态小球舒尔特",
+          "rule": "带数字的小球轻缓运动时找1到N",
+          "video_fit": "A",
+          "suggested_seconds": 90,
+          "auto_video_supported": true
+        },
+        {
+          "id": "01-05",
+          "name": "数字划消",
+          "rule": "从一堆数字中找所有7或指定组合",
+          "video_fit": "A",
+          "suggested_seconds": 45,
+          "auto_video_supported": false
+        },
+        {
+          "id": "01-06",
+          "name": "字母/汉字目标搜索",
+          "rule": "在干扰字符里寻找指定字",
+          "video_fit": "A",
+          "suggested_seconds": 40,
+          "auto_video_supported": false
+        },
+        {
+          "id": "01-07",
+          "name": "多条件搜索",
+          "rule": "只找红色且为偶数的目标",
+          "video_fit": "A",
+          "suggested_seconds": 45,
+          "auto_video_supported": false
+        }
+      ]
+    },
+    {
+      "id": "02",
+      "name": "视觉辨别与图形感知",
+      "goal": "观察细节",
+      "tasks": [
+        {
+          "id": "02-01",
+          "name": "找不同",
+          "rule": "在两张类似图中找5处变化",
+          "video_fit": "A",
+          "suggested_seconds": 45,
+          "auto_video_supported": false
+        },
+        {
+          "id": "02-02",
+          "name": "找相同",
+          "rule": "从多张图里找与样本完全一样的一张",
+          "video_fit": "A",
+          "suggested_seconds": 40,
+          "auto_video_supported": false
+        },
+        {
+          "id": "02-03",
+          "name": "隐藏物品",
+          "rule": "在拥挤场景中找指定5件物品",
+          "video_fit": "A",
+          "suggested_seconds": 60,
+          "auto_video_supported": false
+        },
+        {
+          "id": "02-04",
+          "name": "重叠物体计数",
+          "rule": "数出叠加轮廓中的某种物体",
+          "video_fit": "A",
+          "suggested_seconds": 45,
+          "auto_video_supported": false
+        },
+        {
+          "id": "02-05",
+          "name": "影子匹配",
+          "rule": "从候选影子里找正确轮廓",
+          "video_fit": "A",
+          "suggested_seconds": 35,
+          "auto_video_supported": false
+        },
+        {
+          "id": "02-06",
+          "name": "残缺图补全",
+          "rule": "判断哪块碎片可以补上缺口",
+          "video_fit": "A",
+          "suggested_seconds": 40,
+          "auto_video_supported": false
+        }
+      ]
+    },
+    {
+      "id": "03",
+      "name": "视觉追踪与持续注意",
+      "goal": "追踪移动目标",
+      "tasks": [
+        {
+          "id": "03-01",
+          "name": "单目标小球追踪",
+          "rule": "标记一颗球后去掉标记并交换位置",
+          "video_fit": "A",
+          "suggested_seconds": 45,
+          "auto_video_supported": false
+        },
+        {
+          "id": "03-02",
+          "name": "多目标追踪",
+          "rule": "同时记住2到4颗球并追踪",
+          "video_fit": "A",
+          "suggested_seconds": 60,
+          "auto_video_supported": false
+        },
+        {
+          "id": "03-03",
+          "name": "轨迹追线",
+          "rule": "多条线弯曲交叉，追到指定终点",
+          "video_fit": "A",
+          "suggested_seconds": 45,
+          "auto_video_supported": false
+        },
+        {
+          "id": "03-04",
+          "name": "路径遮挡追踪",
+          "rule": "目标经过遮挡物后判断其出口",
+          "video_fit": "A",
+          "suggested_seconds": 40,
+          "auto_video_supported": false
+        },
+        {
+          "id": "03-05",
+          "name": "闪现目标捕捉",
+          "rule": "一连串画面中找出有目标的那几帧",
+          "video_fit": "A",
+          "suggested_seconds": 35,
+          "auto_video_supported": false
+        }
+      ]
+    },
+    {
+      "id": "04",
+      "name": "短时情景与视觉记忆",
+      "goal": "看后回想",
+      "tasks": [
+        {
+          "id": "04-01",
+          "name": "12物品位置记忆",
+          "rule": "观察3×4物品图后回答位置问题",
+          "video_fit": "A",
+          "suggested_seconds": 63,
+          "auto_video_supported": true
+        },
+        {
+          "id": "04-02",
+          "name": "场景细节记忆",
+          "rule": "观察房间/桌面后回答物品数量颜色",
+          "video_fit": "A",
+          "suggested_seconds": 60,
+          "auto_video_supported": false
+        },
+        {
+          "id": "04-03",
+          "name": "水果种类数量记忆",
+          "rule": "看水果画面后回答种类与个数",
+          "video_fit": "A",
+          "suggested_seconds": 45,
+          "auto_video_supported": false
+        },
+        {
+          "id": "04-04",
+          "name": "扑克牌位置记忆",
+          "rule": "看牌花色与位置，翻面后回忆",
+          "video_fit": "A",
+          "suggested_seconds": 60,
+          "auto_video_supported": false
+        },
+        {
+          "id": "04-05",
+          "name": "图片变化检测",
+          "rule": "前后两张图有几处改变",
+          "video_fit": "A",
+          "suggested_seconds": 45,
+          "auto_video_supported": false
+        },
+        {
+          "id": "04-06",
+          "name": "色块矩阵复现",
+          "rule": "短暂显示彩格分布后选择正确复原图",
+          "video_fit": "A",
+          "suggested_seconds": 40,
+          "auto_video_supported": false
+        },
+        {
+          "id": "04-07",
+          "name": "短故事事实回忆",
+          "rule": "听或看30秒故事后回答事实问题",
+          "video_fit": "A",
+          "suggested_seconds": 75,
+          "auto_video_supported": false
+        }
+      ]
+    },
+    {
+      "id": "05",
+      "name": "工作记忆与信息更新",
+      "goal": "一边记一边处理",
+      "tasks": [
+        {
+          "id": "05-01",
+          "name": "数字顺背",
+          "rule": "数字逐个出现，随后按顺序回忆",
+          "video_fit": "A",
+          "suggested_seconds": 45,
+          "auto_video_supported": false
+        },
+        {
+          "id": "05-02",
+          "name": "数字倒背",
+          "rule": "数字逐个出现，随后倒序回忆",
+          "video_fit": "A",
+          "suggested_seconds": 45,
+          "auto_video_supported": false
+        },
+        {
+          "id": "05-03",
+          "name": "1-back/2-back",
+          "rule": "判断当前刺激与前1或前2个是否相同",
+          "video_fit": "A",
+          "suggested_seconds": 75,
+          "auto_video_supported": false
+        },
+        {
+          "id": "05-04",
+          "name": "Corsi方块序列",
+          "rule": "方块依次亮起，按顺序回忆位置",
+          "video_fit": "A",
+          "suggested_seconds": 60,
+          "auto_video_supported": false
+        },
+        {
+          "id": "05-05",
+          "name": "字母数字重排",
+          "rule": "记住混合串并按数字升序与字母排序",
+          "video_fit": "A",
+          "suggested_seconds": 60,
+          "auto_video_supported": false
+        },
+        {
+          "id": "05-06",
+          "name": "连续心算保留结果",
+          "rule": "数字逐个变化并累计更新结果",
+          "video_fit": "A",
+          "suggested_seconds": 60,
+          "auto_video_supported": false
+        },
+        {
+          "id": "05-07",
+          "name": "运行记忆最后N项",
+          "rule": "一长串信息结束后回忆末尾3项",
+          "video_fit": "A",
+          "suggested_seconds": 50,
+          "auto_video_supported": false
+        }
+      ]
+    },
+    {
+      "id": "06",
+      "name": "抑制控制与抗干扰",
+      "goal": "忍住惯性反应",
+      "tasks": [
+        {
+          "id": "06-01",
+          "name": "Stroop颜色文字冲突",
+          "rule": "只说字的颜色而不是文字含义",
+          "video_fit": "A",
+          "suggested_seconds": 50,
+          "auto_video_supported": false
+        },
+        {
+          "id": "06-02",
+          "name": "Flanker箭头干扰",
+          "rule": "忽略两侧箭头，只判断中间箭头方向",
+          "video_fit": "A",
+          "suggested_seconds": 45,
+          "auto_video_supported": false
+        },
+        {
+          "id": "06-03",
+          "name": "Go/No-Go",
+          "rule": "看见特定图形回答，禁答图形出现时不回应",
+          "video_fit": "A",
+          "suggested_seconds": 60,
+          "auto_video_supported": false
+        },
+        {
+          "id": "06-04",
+          "name": "Simon位置冲突",
+          "rule": "根据颜色判断方向，忽略出现位置",
+          "video_fit": "A",
+          "suggested_seconds": 50,
+          "auto_video_supported": false
+        },
+        {
+          "id": "06-05",
+          "name": "奇偶禁答规则",
+          "rule": "看到偶数回应，碰到7一律跳过",
+          "video_fit": "A",
+          "suggested_seconds": 45,
+          "auto_video_supported": false
+        },
+        {
+          "id": "06-06",
+          "name": "Stop-signal停止信号",
+          "rule": "先准备回应，停止符号出现时取消动作",
+          "video_fit": "B",
+          "suggested_seconds": 60,
+          "auto_video_supported": false
+        }
+      ]
+    },
+    {
+      "id": "07",
+      "name": "规则切换与认知灵活性",
+      "goal": "中途换规则",
+      "tasks": [
+        {
+          "id": "07-01",
+          "name": "数字字母交替",
+          "rule": "按1-A-2-B顺序搜索",
+          "video_fit": "A",
+          "suggested_seconds": 60,
+          "auto_video_supported": false
+        },
+        {
+          "id": "07-02",
+          "name": "形状颜色切换",
+          "rule": "奇数题按颜色，偶数题按形状分类",
+          "video_fit": "A",
+          "suggested_seconds": 60,
+          "auto_video_supported": false
+        },
+        {
+          "id": "07-03",
+          "name": "奇偶大小切换",
+          "rule": "提示变更时在奇偶与大小判断间切换",
+          "video_fit": "A",
+          "suggested_seconds": 50,
+          "auto_video_supported": false
+        },
+        {
+          "id": "07-04",
+          "name": "分类依据突变",
+          "rule": "先按颜色分类，突然改为按数量分类",
+          "video_fit": "A",
+          "suggested_seconds": 50,
+          "auto_video_supported": false
+        },
+        {
+          "id": "07-05",
+          "name": "顺数倒数切换",
+          "rule": "收到反向标志后立即改变计数顺序",
+          "video_fit": "A",
+          "suggested_seconds": 55,
+          "auto_video_supported": false
+        },
+        {
+          "id": "07-06",
+          "name": "条件规则反转",
+          "rule": "红灯按相反方向，绿灯按实际方向",
+          "video_fit": "A",
+          "suggested_seconds": 50,
+          "auto_video_supported": false
+        }
+      ]
+    },
+    {
+      "id": "08",
+      "name": "反应速度与信息加工",
+      "goal": "限时快判断",
+      "tasks": [
+        {
+          "id": "08-01",
+          "name": "闪现数字比大小",
+          "rule": "两个数字闪现后回答哪个更大",
+          "video_fit": "A",
+          "suggested_seconds": 40,
+          "auto_video_supported": false
+        },
+        {
+          "id": "08-02",
+          "name": "符号快速配对",
+          "rule": "根据映射表快速找对应符号",
+          "video_fit": "A",
+          "suggested_seconds": 60,
+          "auto_video_supported": false
+        },
+        {
+          "id": "08-03",
+          "name": "相同不同判断",
+          "rule": "两组字符快速闪过，判断是否完全一致",
+          "video_fit": "A",
+          "suggested_seconds": 45,
+          "auto_video_supported": false
+        },
+        {
+          "id": "08-04",
+          "name": "奇偶快速判断",
+          "rule": "屏幕连续出现数字，进行奇偶快答",
+          "video_fit": "A",
+          "suggested_seconds": 45,
+          "auto_video_supported": false
+        },
+        {
+          "id": "08-05",
+          "name": "方向变化检测",
+          "rule": "箭头瞬间变化，指出变化时刻",
+          "video_fit": "A",
+          "suggested_seconds": 40,
+          "auto_video_supported": false
+        },
+        {
+          "id": "08-06",
+          "name": "快速估数",
+          "rule": "短暂出现一群点后估数量区间",
+          "video_fit": "A",
+          "suggested_seconds": 40,
+          "auto_video_supported": false
+        }
+      ]
+    },
+    {
+      "id": "09",
+      "name": "逻辑推理与规律发现",
+      "goal": "想出规则",
+      "tasks": [
+        {
+          "id": "09-01",
+          "name": "数字序列补全",
+          "rule": "找出数列下一个数字",
+          "video_fit": "A",
+          "suggested_seconds": 45,
+          "auto_video_supported": false
+        },
+        {
+          "id": "09-02",
+          "name": "图形序列补全",
+          "rule": "根据旋转颜色形状规律找下一项",
+          "video_fit": "A",
+          "suggested_seconds": 45,
+          "auto_video_supported": false
+        },
+        {
+          "id": "09-03",
+          "name": "图形矩阵推理",
+          "rule": "从九宫格找缺失图形",
+          "video_fit": "A",
+          "suggested_seconds": 60,
+          "auto_video_supported": false
+        },
+        {
+          "id": "09-04",
+          "name": "条件排除推理",
+          "rule": "根据三条线索锁定正确对象",
+          "video_fit": "A",
+          "suggested_seconds": 60,
+          "auto_video_supported": false
+        },
+        {
+          "id": "09-05",
+          "name": "迷你数独",
+          "rule": "在简化数独中填入唯一数字",
+          "video_fit": "A",
+          "suggested_seconds": 80,
+          "auto_video_supported": false
+        },
+        {
+          "id": "09-06",
+          "name": "真假话逻辑题",
+          "rule": "根据两人的陈述找出矛盾",
+          "video_fit": "A",
+          "suggested_seconds": 60,
+          "auto_video_supported": false
+        },
+        {
+          "id": "09-07",
+          "name": "路径约束推理",
+          "rule": "在限制转弯/步数的条件下找可行路线",
+          "video_fit": "A",
+          "suggested_seconds": 60,
+          "auto_video_supported": false
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "name": "心算与数量能力",
+      "goal": "脑中计算",
+      "tasks": [
+        {
+          "id": "10-01",
+          "name": "快速加减法",
+          "rule": "限时计算一组加减题",
+          "video_fit": "A",
+          "suggested_seconds": 45,
+          "auto_video_supported": false
+        },
+        {
+          "id": "10-02",
+          "name": "连锁运算",
+          "rule": "连续看到数字与运算符并计算最终值",
+          "video_fit": "A",
+          "suggested_seconds": 60,
+          "auto_video_supported": false
+        },
+        {
+          "id": "10-03",
+          "name": "24点游戏",
+          "rule": "用4个数字和四则运算拼出24",
+          "video_fit": "A",
+          "suggested_seconds": 60,
+          "auto_video_supported": false
+        },
+        {
+          "id": "10-04",
+          "name": "折扣与比例题",
+          "rule": "在真实购物情景中计算价格和比率",
+          "video_fit": "A",
+          "suggested_seconds": 50,
+          "auto_video_supported": false
+        },
+        {
+          "id": "10-05",
+          "name": "比较分数小数",
+          "rule": "找出一组数字中的最大或最小",
+          "video_fit": "A",
+          "suggested_seconds": 40,
+          "auto_video_supported": false
+        },
+        {
+          "id": "10-06",
+          "name": "数字谜题",
+          "rule": "找出满足几个算术条件的未知数",
+          "video_fit": "A",
+          "suggested_seconds": 60,
+          "auto_video_supported": false
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "name": "空间想象与心理旋转",
+      "goal": "在脑中转动",
+      "tasks": [
+        {
+          "id": "11-01",
+          "name": "图形旋转判断",
+          "rule": "判断目标是否为基准图旋转后的样子",
+          "video_fit": "A",
+          "suggested_seconds": 50,
+          "auto_video_supported": false
+        },
+        {
+          "id": "11-02",
+          "name": "镜像真假判断",
+          "rule": "从几张候选图中识别镜像",
+          "video_fit": "A",
+          "suggested_seconds": 45,
+          "auto_video_supported": false
+        },
+        {
+          "id": "11-03",
+          "name": "纸张折叠打孔",
+          "rule": "推测展开后洞的位置",
+          "video_fit": "A",
+          "suggested_seconds": 55,
+          "auto_video_supported": false
+        },
+        {
+          "id": "11-04",
+          "name": "立方体展开图",
+          "rule": "选出能折成立方体的平面图",
+          "video_fit": "A",
+          "suggested_seconds": 60,
+          "auto_video_supported": false
+        },
+        {
+          "id": "11-05",
+          "name": "三维俯视图匹配",
+          "rule": "根据立体积木选俯视图",
+          "video_fit": "A",
+          "suggested_seconds": 50,
+          "auto_video_supported": false
+        },
+        {
+          "id": "11-06",
+          "name": "路线迷宫",
+          "rule": "在多岔路迷宫找到出口",
+          "video_fit": "A",
+          "suggested_seconds": 65,
+          "auto_video_supported": false
+        },
+        {
+          "id": "11-07",
+          "name": "积木缺块补全",
+          "rule": "观察立体堆叠并找缺失块",
+          "video_fit": "A",
+          "suggested_seconds": 55,
+          "auto_video_supported": false
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "name": "语言理解与表达",
+      "goal": "处理文字信息",
+      "tasks": [
+        {
+          "id": "12-01",
+          "name": "短文复述",
+          "rule": "看300字短文后说出3个核心信息",
+          "video_fit": "B",
+          "suggested_seconds": 120,
+          "auto_video_supported": false
+        },
+        {
+          "id": "12-02",
+          "name": "快速找错字",
+          "rule": "在短文中找几个错别字",
+          "video_fit": "A",
+          "suggested_seconds": 55,
+          "auto_video_supported": false
+        },
+        {
+          "id": "12-03",
+          "name": "词语分类",
+          "rule": "从一组词中找不属于同一类别的词",
+          "video_fit": "A",
+          "suggested_seconds": 40,
+          "auto_video_supported": false
+        },
+        {
+          "id": "12-04",
+          "name": "词语类比",
+          "rule": "A和B的关系，推断C和什么匹配",
+          "video_fit": "A",
+          "suggested_seconds": 40,
+          "auto_video_supported": false
+        },
+        {
+          "id": "12-05",
+          "name": "句子逻辑排序",
+          "rule": "将打乱的句子重新排成合理故事",
+          "video_fit": "A",
+          "suggested_seconds": 60,
+          "auto_video_supported": false
+        },
+        {
+          "id": "12-06",
+          "name": "限定时间词汇流畅",
+          "rule": "在时间内尽可能想出某类别词语",
+          "video_fit": "B",
+          "suggested_seconds": 60,
+          "auto_video_supported": false
+        }
+      ]
+    },
+    {
+      "id": "13",
+      "name": "计划执行与决策",
+      "goal": "先想后行动",
+      "tasks": [
+        {
+          "id": "13-01",
+          "name": "河内塔最少步数",
+          "rule": "思考如何移动圆盘完成目标",
+          "video_fit": "B",
+          "suggested_seconds": 75,
+          "auto_video_supported": false
+        },
+        {
+          "id": "13-02",
+          "name": "任务优先级排序",
+          "rule": "根据紧急度与依赖关系安排顺序",
+          "video_fit": "A",
+          "suggested_seconds": 55,
+          "auto_video_supported": false
+        },
+        {
+          "id": "13-03",
+          "name": "最优路线规划",
+          "rule": "在图上寻找满足条件的最短路线",
+          "video_fit": "A",
+          "suggested_seconds": 65,
+          "auto_video_supported": false
+        },
+        {
+          "id": "13-04",
+          "name": "有限资源分配",
+          "rule": "使用限定代币完成多个任务",
+          "video_fit": "A",
+          "suggested_seconds": 60,
+          "auto_video_supported": false
+        },
+        {
+          "id": "13-05",
+          "name": "工作流程排序",
+          "rule": "将六个步骤排成可执行流程",
+          "video_fit": "A",
+          "suggested_seconds": 55,
+          "auto_video_supported": false
+        },
+        {
+          "id": "13-06",
+          "name": "棋类局面挑战",
+          "rule": "根据围棋死活题或象棋一步杀法选择正确落点",
+          "video_fit": "B",
+          "suggested_seconds": 80,
+          "auto_video_supported": false
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "name": "听觉记忆与声音辨别",
+      "goal": "听觉互动",
+      "tasks": [
+        {
+          "id": "14-01",
+          "name": "听觉数字广度",
+          "rule": "听一串数字并复述",
+          "video_fit": "A",
+          "suggested_seconds": 50,
+          "auto_video_supported": false
+        },
+        {
+          "id": "14-02",
+          "name": "节奏记忆复现",
+          "rule": "听一段节奏，选择正确节奏序列",
+          "video_fit": "A",
+          "suggested_seconds": 50,
+          "auto_video_supported": false
+        },
+        {
+          "id": "14-03",
+          "name": "音高对比",
+          "rule": "比较两个音哪个更高",
+          "video_fit": "A",
+          "suggested_seconds": 35,
+          "auto_video_supported": false
+        },
+        {
+          "id": "14-04",
+          "name": "声音序列位置",
+          "rule": "听4种音效后回答第3个是什么",
+          "video_fit": "A",
+          "suggested_seconds": 45,
+          "auto_video_supported": false
+        },
+        {
+          "id": "14-05",
+          "name": "口头指令记忆",
+          "rule": "听多步指令后依次选正确动作",
+          "video_fit": "A",
+          "suggested_seconds": 60,
+          "auto_video_supported": false
+        },
+        {
+          "id": "14-06",
+          "name": "声音计数",
+          "rule": "听混合音效后数出铃声几次",
+          "video_fit": "A",
+          "suggested_seconds": 45,
+          "auto_video_supported": false
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "name": "分配注意与双任务",
+      "goal": "同时管两件事",
+      "tasks": [
+        {
+          "id": "15-01",
+          "name": "追踪小球同时计数",
+          "rule": "盯住指定小球，同时记录闪现符号个数",
+          "video_fit": "B",
+          "suggested_seconds": 80,
+          "auto_video_supported": false
+        },
+        {
+          "id": "15-02",
+          "name": "看图同时记音效",
+          "rule": "观察图片期间记住听到的声音顺序",
+          "video_fit": "B",
+          "suggested_seconds": 70,
+          "auto_video_supported": false
+        },
+        {
+          "id": "15-03",
+          "name": "中心判断加边缘发现",
+          "rule": "判断中心字符，同时数边缘闪光",
+          "video_fit": "B",
+          "suggested_seconds": 65,
+          "auto_video_supported": false
+        },
+        {
+          "id": "15-04",
+          "name": "心算加位置记忆",
+          "rule": "连续算术时还要记住物体移动位置",
+          "video_fit": "B",
+          "suggested_seconds": 85,
+          "auto_video_supported": false
+        },
+        {
+          "id": "15-05",
+          "name": "双通道N-back",
+          "rule": "同时更新画面位置和声音刺激",
+          "video_fit": "B",
+          "suggested_seconds": 90,
+          "auto_video_supported": false
+        }
+      ]
+    },
+    {
+      "id": "16",
+      "name": "情绪识别与情境判断",
+      "goal": "理解与调节",
+      "tasks": [
+        {
+          "id": "16-01",
+          "name": "表情线索辨别",
+          "rule": "根据原创插画选择可能的情绪",
+          "video_fit": "B",
+          "suggested_seconds": 50,
+          "auto_video_supported": false
+        },
+        {
+          "id": "16-02",
+          "name": "情绪词干扰任务",
+          "rule": "忽略情绪词含义只判断字体颜色",
+          "video_fit": "A",
+          "suggested_seconds": 50,
+          "auto_video_supported": false
+        },
+        {
+          "id": "16-03",
+          "name": "视角转换题",
+          "rule": "换一个角色视角解释同一事件",
+          "video_fit": "B",
+          "suggested_seconds": 60,
+          "auto_video_supported": false
+        },
+        {
+          "id": "16-04",
+          "name": "冲动回应选择",
+          "rule": "在情景题里选更稳妥的应对方式",
+          "video_fit": "B",
+          "suggested_seconds": 60,
+          "auto_video_supported": false
+        },
+        {
+          "id": "16-05",
+          "name": "情绪标注练习",
+          "rule": "学习为情绪命名，区分感受与事实",
+          "video_fit": "C",
+          "suggested_seconds": 90,
+          "auto_video_supported": false
+        }
+      ]
+    }
+  ],
+  "lifestyle_categories": [
+    {
+      "category": "睡眠和作息",
+      "ideas": [
+        "成人通常需要每晚至少7小时睡眠，重点是时长与规律性，而非固定23点前睡",
+        "固定起床时间",
+        "睡前减少强光与电子屏干扰"
+      ]
+    },
+    {
+      "category": "身体活动",
+      "ideas": [
+        "每周150–300分钟中等强度有氧活动（按个人情况调整）",
+        "散步与力量训练",
+        "减少久坐、增加日常活动"
+      ]
+    },
+    {
+      "category": "正念与压力管理",
+      "ideas": [
+        "5–10分钟呼吸觉察练习",
+        "识别并命名情绪",
+        "日常情绪记录"
+      ]
+    },
+    {
+      "category": "工作与注意管理",
+      "ideas": [
+        "番茄钟单任务",
+        "降低通知干扰",
+        "提前准备固定穿搭或早餐以减少重复性选择（生活管理策略，非认知改善保证）"
+      ]
+    },
+    {
+      "category": "自控与日常策略",
+      "ideas": [
+        "遇到冲动先延迟片刻，再做有意识选择",
+        "使用执行意图：如果X发生，就做Y",
+        "第三人称自我对话作为可尝试的自我调节方式"
+      ]
+    },
+    {
+      "category": "社交与持续学习",
+      "ideas": [
+        "学习新技能",
+        "阅读并向别人讲述",
+        "社会参与与有意义活动"
+      ]
+    }
+  ]
+}

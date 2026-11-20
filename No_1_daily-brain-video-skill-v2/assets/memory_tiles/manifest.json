@@ -1,0 +1,64 @@
+{
+  "items": [
+    {
+      "name": "小熊",
+      "file": "01.png",
+      "category": "object"
+    },
+    {
+      "name": "足球",
+      "file": "02.png",
+      "category": "object"
+    },
+    {
+      "name": "小黄鸭",
+      "file": "03.png",
+      "category": "object"
+    },
+    {
+      "name": "苹果",
+      "file": "04.png",
+      "category": "fruit"
+    },
+    {
+      "name": "闹钟",
+      "file": "05.png",
+      "category": "object"
+    },
+    {
+      "name": "杯子",
+      "file": "06.png",
+      "category": "object"
+    },
+    {
+      "name": "多肉",
+      "file": "07.png",
+      "category": "object"
+    },
+    {
+      "name": "魔方",
+      "file": "08.png",
+      "category": "object"
+    },
+    {
+      "name": "柠檬",
+      "file": "09.png",
+      "category": "fruit"
+    },
+    {
+      "name": "相机",
+      "file": "10.png",
+      "category": "object"
+    },
+    {
+      "name": "耳机",
+      "file": "11.png",
+      "category": "object"
+    },
+    {
+      "name": "葡萄",
+      "file": "12.png",
+      "category": "fruit"
+    }
+  ]
+}
